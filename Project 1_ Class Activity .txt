@@ -1,0 +1,30 @@
+﻿Instructions: There are 3 questions followed by 3 SQL Queries. The goal is to correct the code if it contains an error. Copy the original code right below the given code and make the changes if needed. 
+
+
+1)To find the total number of employees in a company:
+
+
+SELECT *(EmployeeNumber)
+From employee;
+
+
+2) To find the first and last names of employees whose last name starts with “Jo”.
+
+
+SELECT first_name, last_name
+From employee
+Where last_name like “Jo%”;
+
+
+
+
+3) To find the title and category name(such as action) of those movies that are of the action category.
+
+
+select film.title, film.film_id, category.name
+from film
+inner join film_category
+on film.film_id = film_category.film_id
+inner join_category
+on film_category.category.id = category.category_id
+where category.name = "Action";
